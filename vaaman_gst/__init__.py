@@ -13,9 +13,5 @@ def _patch_purchase_reconciliation_excel():
 
 _patch_purchase_reconciliation_excel()
 
-from vaaman_gst.vaaman_gst.custom_ledger import execute as custom_general_ledger_execute
-import erpnext.accounts.report.general_ledger.general_ledger
-erpnext.accounts.report.general_ledger.general_ledger.execute = custom_general_ledger_execute
-
 
 
